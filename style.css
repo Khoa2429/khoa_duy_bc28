@@ -1,4 +1,8 @@
 .foody {
+    height: 800px;
+}
+
+.foody {
     background-image: url(./image/banner2.jpg);
     height: 490px;
     overflow: hidden;
@@ -23,7 +27,7 @@
 .number {
     position: absolute;
     top: 420px;
-    
+
 }
 
 .foody__item {
@@ -87,9 +91,11 @@
     transform: translateY(0);
     transition: all 0.5s;
 }
+
 .number__item:hover {
     transform: translateY(-25px);
 }
+
 .number__item i {
     font-size: 28px;
     background-color: #ff6600;
@@ -121,6 +127,94 @@
     display: flex;
     justify-content: space-around;
 }
-.video{
+
+.video {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video__item {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./image/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 30;
+}
+
+.video__item .fas {
+    color: #ff6600 !important;
+    font-size: 50px;
+    padding: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .2);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.video__item .fas-1 {
+    content: '';
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.video__item .fas-2 {
+    content: '';
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+    animation: animated 1.5s linear infinite;
+    opacity: 0;
+    animation-delay: .4s;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes animated {
+    0% {
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
 }
