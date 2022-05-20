@@ -17,11 +17,13 @@
     font-weight: 600;
     color: #fff;
     text-align: center;
+
 }
 
 .foody__list {
     display: flex;
     justify-content: center;
+
 }
 
 .number {
@@ -141,7 +143,7 @@
 
 .video__item {
     width: 100%;
-    height: 200px;
+    height: 500px;
     background: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./image/banner3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -217,4 +219,122 @@
     100% {
         transform: scale(1.5);
     }
+}
+
+.item_center {
+    margin: 0 30px;
+}
+
+.paper__item {
+    position: relative;
+}
+
+.item_img img {
+    height: 210px;
+    width: 370px;
+    border-radius: 15px;
+}
+
+.actor__1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.actor__1 {
+    display: flex;
+    justify-content: left;
+}
+
+.item__time {
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    top: 160px;
+    left: 10px;
+}
+
+.item__actor {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item__time a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6600;
+    padding: 4px 15px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.item__time p {
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+}
+
+.item_img h3 {
+    color: #232121;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+.item_img p {
+    color: rgba(22, 28, 45, 0.7);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.actor__1 {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #232121;
+    padding-right: 20px;
+    letter-spacing: .02em;
+}
+
+.actor__2 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #232121;
+    letter-spacing: .02em;
+    cursor: pointer;
+}
+
+.actor__2:hover {
+    font-weight: 600;
+    font-size: 20px;
+    color: #ff6600;
+    letter-spacing: .02em;
+    cursor: pointer;
+}
+
+.paper__header {
+    margin-bottom: 30px;
+}
+
+.paper__header h3 {
+    font-size: 40px;
+    color: #232121;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+}
+
+.paper__header h6 {
+    font-size: 25px;
+    color: #ff6600;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    line-height: 30px;
 }
